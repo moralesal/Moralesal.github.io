@@ -18,40 +18,41 @@
                 Data about the planets of our solar system (Planetary facts taken from <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet - Metric</a>).
                 </caption>
                 <colgroup>
-                    <col> 
-                    <col>
-                    <col>
-                    <col>
-                    <col>
-                    <col>
-                    <col>
-                    <col>
-                    <col>
-                    <col>
-                    <col>
-                    <col>
+                    <col span="2" title="Planet Groups"> 
+                    <col title="Planet names">
+                    <col title="Mass">
+                    <col title="Diameter">
+                    <col title="Density">
+                    <col title="Gravity">
+                    <col title="Length of day">
+                    <col title="Distane from sun">
+                    <col title="Mean temprature">
+                    <col title="Number of moons">
+                    <col title="Notes">
+                    <col title="Image">
                 </colgroup>
                 <thead>
                     <tr></tr>
                 </thead>
                 <tbody>
                     <tr>
-                    <td>&nbsp;</td>
-                    <th>Name</th>
-                    <th>Mass (10<sup>24</sup>kg)</th>
-                    <th>Diameter (km)</th>
-                    <th>Density (kg/m<sup>3</sup>)</th>
-                    <th>Gravity (m/s<sup>2</sup>)</th>
-                    <th>Length of day (hours)</th>
-                    <th>Distance from Sun (10<sup>6</sup>km)</th>
-                    <th>Mean temperature (°C)</th>
-                    <th>Number of moons</th>
-                    <th>Notes</th>
-                    <th>Image</th>
+                    <td colspan="2"></td>
+                    <th scope="col">Name</th>
+                    <th scope="col">Mass (10<sup>24</sup>kg)</th>
+                    <th scope="col">Diameter (km)</th>
+                    <th scope="col">Density (kg/m<sup>3</sup>)</th>
+                    <th scope="col">Gravity (m/s<sup>2</sup>)</th>
+                    <th scope="col">Length of day (hours)</th>
+                    <th scope="col">Distance from Sun (10<sup>6</sup>km)</th>
+                    <th scope="col">Mean temperature (°C)</th>
+                    <th scope="col">Number of moons</th>
+                    <th scope="col">Notes</th>
+                    <th scope="col">Image</th>
                     </tr>
                     <tr>
-                    <th>Terrestrial planets
-                    <th>Mercury</th>
+                    <th rowspan="4" colspan="2"
+                        scope="rowgroup">Terrestrial planets</th>
+                    <th scope="row">Mercury</th>
                     <td>0.330</td>
                     <td>4,897</td>
                     <td>5472</td>
@@ -64,8 +65,7 @@
                     <td><img src="images/mercury.jpg" alt="Mercury picture"></td>
                     </tr>
                     <tr>
-                    <th>Terrestrial planets</th>
-                    <th>Venus</th>
+                    <th scope="row">Venus</th>
                     <td>4.87</td>
                     <td>12,104</td>
                     <td>5243</td>
@@ -78,8 +78,7 @@
                     <td><img src="images/venus.jpg" alt="Venus picrure"></td>
                     </tr>
                     <tr>
-                    <th>Terrestrial planets</th>
-                    <th>Earth</th>
+                    <th scope="row">Earth</th>
                     <td>5.97</td>
                     <td>12,756</td>
                     <td>5514</td>
@@ -92,8 +91,7 @@
                     <td><img src="images/earth.png" alt="Earth picture"></td>
                     </tr>
                     <tr>
-                    <th>Terrestrial planet</th>
-                    <th>Mars</th>
+                    <th scope="row">Mars</th>
                     <td>0.642</td>
                     <td>6,792</td>
                     <td>3933</td>
@@ -106,7 +104,10 @@
                     <td><img src="images/mars.jpg" alt="Mars picture"></td>
                     </tr>
                     <tr>
-                    <th>Jovian planets</th>
+                    <th rowspan="4" colspan="1"
+                        scope="rowgroup">Jovian planets</th>
+                    <th rowspan="2" colspan="1"
+                        scope="rowgroup">Gas giants</th>
                     <th>Jupiter</th>
                     <td>1898</td>
                     <td>142,984</td>
@@ -120,8 +121,7 @@
                     <td><img src="images/jupiter.jpg" alt="Jupiter picture"></td>
                     </tr>
                     <tr>
-                    <th>Jovian planets</th>
-                    <th>Saturn</th>
+                    <th scope="row">Saturn</th>
                     <td>568</td>
                     <td>120,536</td>
                     <td>687</td>
@@ -134,7 +134,8 @@
                     <td><img src="images/saturn.jpg" alt="Satrun picture"></td>
                     </tr>
                     <tr>
-                    <th>Ice Giants</th>
+                    <th rowspan="2" colspan="1"
+                        scope="rowgroup">Ice Giants</th>
                     <th>Uranus</th>
                     <td>86.8</td>
                     <td>51,118</td>
@@ -148,8 +149,7 @@
                     <td><img src="images/uranus.jpg" alt="Uranus picture"></td>
                     </tr>
                     <tr>
-                    <th>Ice giants</th>
-                    <th>Neptune</th>
+                    <th scope="row">Neptune</th>
                     <td>102</td>
                     <td>49,528</td>
                     <td>1638</td>
@@ -162,7 +162,8 @@
                     <td><img src="images/neptune.jpg" alt="Neptune picture"></td>
                     </tr>
                     <tr>
-                    <th>Dwarf planets</th>
+                    <th rowspan="1" colspan="2"
+                        scope="rowgroup">Dwarf planets</th>
                     <th>Pluto</th>
                     <td>0.0146</td>
                     <td>2,370</td>
